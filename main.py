@@ -1,4 +1,5 @@
-# PYTHON ESSENTIAL -2 PROGRAMS.
+print("Hi,Hello this is Essential to Programs!")
+
 # 1 Importing a module
 from math import sin, pi
 print(sin(pi / 2))
@@ -10,6 +11,7 @@ def sin(x):
         return None
 print(sin(pi / 2))
 
+
 # 2 Selected functions
 from math import pi, radians, degrees, sin, cos, tan, asin
 ad = 90
@@ -20,16 +22,17 @@ print(ar == pi / 2.)
 print(sin(ar) / cos(ar) == tan(ar))
 print(asin(sin(ar)) == ar)
 
+
 # 3 Exponential Functions
 from math import e, exp, log
-
 print(pow(e, 1) == exp(log(e)))
 print(pow(2, 2) == exp(2 * log(2)))
 print(log(e, e) == exp(0))
 
+
+
 # 4 general-purpose functions
 from math import ceil, floor, trunc
-
 x = 1.4
 y = 2.6
 print(floor(x), floor(y))
@@ -39,15 +42,15 @@ print(ceil(-x), ceil(-y))
 print(trunc(x), trunc(y))
 print(trunc(-x), trunc(-y))
 
+
 # 5 random module
 from random import random
-
 for i in range(5):
     print(random())
 
+
 # 6 The randrange and randint functions
 from random import randrange, randint
-
 print(randrange(1), end=' ')
 print(randrange(0, 1), end=' ')
 print(randrange(0, 1, 1), end=' ')
@@ -70,12 +73,13 @@ print(system())
 from platform import version
 print(version())
 
+
 # 7 python_version_tuple functions
 from platform import python_implementation, python_version_tuple
-
 print(python_implementation())
 for atr in python_version_tuple():
     print(atr)
+
 
 # 8 Modules
 counter = 0
@@ -106,11 +110,12 @@ if _name_ == "_main_":
     print(suml(my_list) == 15)
     print(prodl(my_list) == 120)
 
+
 # 9 module named sys.
 import sys
-
 for p in sys.path:
     print(p)
+
 
 # 10 Strings
 # Example 1
@@ -122,11 +127,11 @@ print(len(empty))
 # Example 3
 i_am = 'I\'m'
 print(len(i_am))
-
 # Multiline strings
 multiline = '''Line #1
 Line #2'''
 print(len(multiline))
+
 
 # 11 Operations on strings
 str1 = 'a'
@@ -136,11 +141,13 @@ print(str2 + str1)
 print(5 * 'a')
 print('b' * 4)
 
+
 # 12 Operations on strings: ord()
 char_1 = 'a'
-char_2 = ' '  # space
+char_2 = ' '
 print(ord(char_1))
 print(ord(char_2))
+
 
 # 13 Slices
 alpha = "abdefg"
@@ -152,6 +159,7 @@ print(alpha[-3:4])
 print(alpha[::2])
 print(alpha[1::2])
 
+
 # 14 The in and not in operators
 alphabet = "abcdefghijklmnopqrstuvwxyz"
 print("f" in alphabet)
@@ -160,12 +168,12 @@ print("1" in alphabet)
 print("ghi" in alphabet)
 print("Xyz" in alphabet)
 
+
 # 15 Operations on strings
 alphabet = "bcdefghijklmnopqrstuvwxy"
 alphabet = "a" + alphabet
 alphabet = alphabet + "z"
 print(alphabet)
-# Operations on strings: min()
 # Demonstrating min()
 print(min("aAbByYzZ"))
 # Demonstrating min()
@@ -181,10 +189,12 @@ print('[' + max(t) + ']')
 t = [0, 1, 2]
 print(max(t))
 
+
 # 16 index() method
 print("aAbByYzZaA".index("b"))
 print("aAbByYzZaA".index("Z"))
 print("aAbByYzZaA".index("A"))
+
 
 # 17 list() function
 print(list("abcabc"))
@@ -245,6 +255,7 @@ print()
 # upper() method:
 print("I know that I know nothing. Part 2.".upper())
 
+
 # 18 Sorting:
 first_greek = ['omega', 'alpha', 'pi', 'gamma']
 first_greek_2 = sorted(first_greek)
@@ -256,6 +267,7 @@ second_greek = ['omega', 'alpha', 'pi', 'gamma']
 print(second_greek)
 second_greek.sort()
 print(second_greek)
+
 
 # 19  Caesar cipher-Encrypting a message
 text = input("Enter your message: ")
@@ -270,6 +282,8 @@ for char in text:
     cipher += chr(code)
 print(cipher)
 
+
+
 # 20 Caesar cipher - decrypting a message.
 cipher = input('Enter your cryptogram: ')
 text = ''
@@ -283,8 +297,9 @@ for char in cipher:
     text += chr(code)
 print(text)
 
-# 21 Numbers Processor
 
+
+# 21 Numbers Processor
 line = input("Enter a line of numbers - separate them with spaces: ")
 strings = line.split()
 total = 0
@@ -294,6 +309,7 @@ try:
     print("The total is:", total)
 except:
     print(substr, "is not a number.")
+
 
 # 22 IBAN Validator.
 iban = input("Enter IBAN, please: ")
@@ -318,6 +334,7 @@ else:
     else:
         print("IBAN entered is invalid.")
 
+
 # 23 Exceptions
 first_number = int(input("Enter the first number: "))
 second_number = int(input("Enter the second number: "))
@@ -327,6 +344,7 @@ except:
     print("This operation cannot be done.")
 print("THE END.")
 
+
 # Exceptions: continued
 try:
     print("1")
@@ -335,7 +353,6 @@ try:
 except:
     print("Oh dear, something went wrong...")
 print("3")
-
 # Exceptions: continued
 try:
     x = int(input("Enter a number: "))
@@ -343,8 +360,6 @@ try:
 except:
     print("Oh dear, something went wrong...")
 print("THE END.")
-
-
 # The anatomy of exceptions
 def bad_fun(n):
     try:
@@ -356,8 +371,8 @@ try:
     bad_fun(0)
 except ArithmeticError:
     print("I see!")
-
 print("THE END.")
+
 
 # 24 stack
 stack = []
@@ -384,10 +399,8 @@ stack_object = Stack()
 class Stack:
     def _init_(self):
         self.__stack_list = []
-
     def push(self, val):
         self.__stack_list.append(val)
-
     def pop(self):
         val = self.__stack_list[-1]
         del self.__stack_list[-1]
@@ -414,11 +427,11 @@ class AddingStack(Stack):
         Stack._init_(self)
         self.__sum = 0
 
+
 # 26 instance variables
 class ExampleClass:
     def _init_(self, val=1):
         self.__first = val
-
     def set_second(self, val=2):
         self.__second = val
 example_object_1 = ExampleClass()
@@ -434,7 +447,6 @@ print(example_object_3._dict_)
 # 27 Class variables:
 class ExampleClass:
     __counter = 0
-
     def _init_(self, val=1):
         self.__first = val
         ExampleClass.__counter += 1
@@ -444,6 +456,7 @@ example_object_3 = ExampleClass(4)
 print(example_object_1._dict, example_object_1._ExampleClass_counter)
 print(example_object_2._dict, example_object_2._ExampleClass_counter)
 print(example_object_3._dict, example_object_3._ExampleClass_counter)
+
 
 # 28 Methods
 class Classy:
@@ -460,26 +473,19 @@ print(obj_1.var)
 # 30 classes and objects:
 class SuperOne:
     pass
-
-
 class SuperTwo:
     pass
-
-
 class Sub(SuperOne, SuperTwo):
     pass
-
-
 def printBases(cls):
     print('( ', end='')
     for x in cls._bases_:
         print(x._name_, end=' ')
     print(')')
-
-
 printBases(SuperOne)
 printBases(SuperTwo)
 printBases(Sub)
+
 
 # 28 Investigating classes
 class MyClass:
@@ -542,6 +548,7 @@ string_2 = "Mary had a little lamb"
 string_1 += "lamb"
 print(string_1 == string_2, string_1 is string_2)
 
+
 # 29 Hierarchy of classes:
 import time
 class TrackedVehicle:
@@ -558,6 +565,7 @@ class WheeledVehicle:
         turn_front_wheels(left, True)
         time.sleep(0.25)
         turn_front_wheels(left, False)
+
 
 # 30 Generator
 class Fib:
