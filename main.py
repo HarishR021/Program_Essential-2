@@ -589,3 +589,5 @@ class Fib:
         ret = self._p1 + self._p2
         self._p1, self.p2 = self._p2, ret
         return ret
+
+print("Thank, you!")
