@@ -1,4 +1,4 @@
-print("Hi,Hello this is Essential to Programs!")
+print("Hi,Hello! these are my Python Essential 2 - codes!")
 
 # 1 Importing a module
 from math import sin, pi
